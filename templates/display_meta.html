@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}Display request meta{% endblock %}
+
+{% block content %}
+    <table>
+        {% for key, value in meta_dict.items %}
+            <tr><td>{{ key }}</td><td>{{ value }}</td></tr>
+        {% endfor %}
+    </table>
+{% endblock %}

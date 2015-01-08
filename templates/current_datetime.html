@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    It is now {{ locals.current_date }}.</br>
+{#    It is {{ name }}.</br>#}
+{#    It is {{ list.name }}#}
+    {% for key, value in locals.items %}
+        <li>{{ key }}: {{ value }}</li>
+    {% endfor %}
+</body>
+</html>
